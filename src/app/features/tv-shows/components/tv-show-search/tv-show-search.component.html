@@ -1,0 +1,4 @@
+<div class="input">
+  <input placeholder="Type your favorite show..." (input)="onInput($event)" />
+</div>
+<app-shows-list [shows$]="filteredShows$"></app-shows-list>

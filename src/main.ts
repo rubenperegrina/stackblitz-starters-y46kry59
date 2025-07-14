@@ -1,18 +1,6 @@
-import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { ShowListComponent } from './app/shows.component';
-import { provideHttpClient } from '@angular/common/http';
+import { appConfig } from './app/app.config';
+import { App } from './app/app.component';
 
-@Component({
-  selector: 'app-root',
-  template: `
-    <h2>TV show search</h2>
-    <shows></shows>
-  `,
-  imports: [ShowListComponent],
-})
-export class App {
-  name = 'Angular';
-}
-
-bootstrapApplication(App, { providers: [provideHttpClient()] });
+bootstrapApplication(App, appConfig)
+.catch((err) => console.error(err));

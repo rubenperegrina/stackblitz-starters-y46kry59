@@ -1,0 +1,14 @@
+@import "../../../../styles/variables.scss";
+
+.toolbar-spacer {
+    flex: 1 1 auto;
+  }
+  
+.active {
+  background-color: $dark-blue;
+  font-weight: 600;
+}
+
+mat-toolbar {
+  background-color: $grey-60;
+}

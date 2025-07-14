@@ -1,0 +1,35 @@
+<div class="cards-container">
+  @for (show of shows$ | async; track show.id) {
+    <div class="show-card">
+      <img
+        [ngSrc]="show.image"
+        [alt]="show.name"
+        width="210"
+        height="295"
+        class="show-image"
+      />
+      <div class="show-info">
+        <h2 class="show-title">{{ (show.name).slice(0, 20) }}</h2>
+        <p class="show-summary">
+          {{ (show.summary || '').slice(0, 70) }}
+          @if((show.summary || '').length > 70) {
+            <span>…</span>
+          }
+        </p>
+        <div class="show-details">
+          <span>Language: {{ show.language ?? 'N/A' }}</span>
+          <span class="show-rating">{{ show.rating === 0 ? 'N/A' : show.rating }}
+          </span>
+        </div>
+        <div class="show-actors">
+          <span>
+            {{(show.actors || []).slice(0, 3).join(', ')}}
+            @if((show.actors || []).length > 3) {
+              <span>…</span>
+            }
+          </span>
+        </div>
+      </div>
+    </div>
+  }
+</div>

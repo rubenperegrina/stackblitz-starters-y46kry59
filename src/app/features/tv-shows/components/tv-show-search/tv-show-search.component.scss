@@ -1,0 +1,23 @@
+@import "../../../../../styles/variables.scss";
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.input input {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid $blue;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px $black;
+  transition: border-color 0.3s ease;
+}
+
+.input input:focus {
+  border-color: $dark-blue;
+  outline: none;
+}
