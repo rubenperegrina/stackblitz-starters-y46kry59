@@ -42,6 +42,7 @@ https://www.tvmaze.com/api#show-index
 - **Pre-push checks:** Automate tests, linting, and commit conventions to ensure code quality before merging.
 
 ## Project Structure
+```bash
 src
 └── app
     ├── features
@@ -58,6 +59,7 @@ src
     ├── styles                   # Global styles and SCSS variables
     ├── index.html               # Main HTML entry point
     └── main.ts                  # Angular application bootstrap
+```
 
 ## How to Run
 1. **Install dependencies:**  
@@ -69,4 +71,5 @@ src
 
 This refactor transforms the original codebase into a **robust, maintainable, and performant Angular application**. The applied patterns and improvements not only solve immediate issues but also lay a solid foundation for future growth and features.
 While the core architecture and optimizations are in place, the application is not yet fully complete. The structure, patterns, and optimizations implemented ensure that the project can be easily extended and finalized, following best practices. Several planned improvements and features remain to be developed, as outlined above, to fully realize the app’s potential.
+
 
